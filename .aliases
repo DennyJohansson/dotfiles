@@ -1,5 +1,3 @@
-# create user script
-alias hmu="cd ~/Pro/playground/joshua-puppeteer/ && node index.js --environment"
 alias log="git log --decorate --oneline --graph"
 # common
 alias cdd='cd -'
@@ -16,17 +14,4 @@ alias ld="ls -ld */"   # List in long format, only directories
 alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
-alias gomodules="cd ~/Pro/modules/"
-alias goecom="cd ~/Pro/joshua/ecom/"
-alias goplayground="cd ~/Pro/playground/"
-alias serveecom="cd $BASE_DEV_DIR/tcserver; sh tcruntime-ctl.sh hybris-dev run" # Starts tc-server
-alias buildecom="cd $BASE_DEV_DIR/ecom; ant clean compile" # Compiles ecom
-alias stopapache="sudo apachectl stop" # Stops apache
-alias startapache="sudo apachectl start" # Starts apache
-alias restartapache="sudo apachectl restart" # Restart apache
-alias apachelog="tail -f /var/log/apache2/access_log" # Tail the apache access logs
-alias apacheerrorlog="tail -f /var/log/apache2/error_log" # Tail the apache error logs
-alias tclogs="tail -f -n 1000 $CATALINA_HOME/logs/hybris.log"# SHow tc server öpgs
-alias startnginx="sudo nginx"
-alias stopnginx="sudo nginx -s stop"
 
