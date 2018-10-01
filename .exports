@@ -1,0 +1,16 @@
+. ~/.dotfiles/.proxy
+. ~/.dotfiles/.joshua
+export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH="/usr/local/sbin:$PATH"
+export PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true
+# Path to your oh-my-zsh installation.
+export ZSH=~/.dotfiles/.oh-my-zsh
+# JAVA version
+export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home/"
+# mac ports vars
+export PATH=/opt/local/bin:/opt/local/sbin:$PATH
+export MANPATH=/opt/local/share/man:$MANPATH
+
+# activate nvm
+export NVM_DIR="$HOME/.nvm"
+
