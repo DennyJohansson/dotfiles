@@ -1,4 +1,4 @@
-alias log="git log --decorate --oneline --graph"
+alias glog="git log --decorate --oneline --graph"
 # common
 alias cdd='cd -'
 alias cl='clear'
@@ -6,7 +6,7 @@ alias sleep="pmset sleepnow"
 alias shutdown="sudo shutdown -r now"
 # utility
 alias r='source ~/.zshrc'
-alias e='mvim ~/.aliases'  # Edit aliases
+alias e='mvim ~/.dotfiles/.aliases'  # Edit aliases
 # xcode simulator
 alias simulator="open -a /Applications/Xcode.app/Contents/Developer/Applications/Simulator.app"
 alias l="ls -la"       # List in long format, include dotfiles
