@@ -1,1 +1,20 @@
+# functions
+# Open man page as PDF
+function manpdf() {
+ man -t "${1}" | open -f -a /Applications/Preview.app/
+}
+# Create a new directory and enter it
+function take {
+  mkdir $1
+  cd $1
+}
+# commit pending changes and quote all args as message
+function gg {
+  git commit -v -a -m "$*"
+}
+# write feature branch function
+function gfb {
+  gcm
+  gcb "feature/$*"
+}
 
