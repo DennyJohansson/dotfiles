@@ -14,4 +14,4 @@ alias ld="ls -ld */"   # List in long format, only directories
 alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
-
+alias mvim="/Applications/MacVim.app/Contents/MacOS/Vim -g"

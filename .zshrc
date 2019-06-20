@@ -1,7 +1,8 @@
-# If you come from bash you might have to change your $PATH.
-
 . ~/.dotfiles/.exports
-DEFAULT_USER="semac2960"
+# If you come from bash you might have to change your $PATH.
+. /usr/local/etc/profile.d/z.sh
+
+#DEFAULT_USER="semac2960"
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
@@ -50,9 +51,9 @@ plugins=(
   git
   zsh-256color
 )
-. $ZSH/oh-my-zsh.sh
-. ~/.dotfiles/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
-. ~/.dotfiles/zsh/z.sh
+. ~/.oh-my-zsh/oh-my-zsh.sh
+#. ~/zsh-autosuggestions/zsh-autosuggestions.zsh
+#. ~/zsh/z.sh
 
 # Codi
 # Usage: codi [filetype] [filename]
@@ -77,3 +78,15 @@ source ~/.dotfiles/.functions
 # Set Spaceship ZSH as a prompt
 autoload -U promptinit; promptinit
 prompt spaceship
+
+# fzf
+# Setting fd as the default source for fzf
+export FZF_DEFAULT_COMMAND='fd --type f'
+# To apply the command to CTRL-T as well
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# ctags
+alias ctags="`brew --prefix`/bin/ctags"
+alias jtags=”ctags -R app config lib && sed -i ‘’ -E ‘/^(if|switch|function|module\.exports|it|describe).+language:js$/d’ tags”
