@@ -1,14 +1,10 @@
 # Dotfiles
-repo for my dotfiles! 
+not sure what this should be right now! let's keep it and see!
 
-### Install
-clone repo ...
-symlink ...
-
-```
-git clone ...
-ln -s ~/.dotfiles/.zshrc ~/.zshrc
-npm install -g spaceship-prompt
-```
-
+## gather terminal helpers
+- [x] aliases
+- [x] functions
+- [ ] install script
+- [ ] list of common helper libs needed
+- [ ] link to zsh plugins
 
